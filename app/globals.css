@@ -21,7 +21,7 @@
 }
 
 .card-zoom {
-  @apply relative flex items-center justify-center overflow-hidden w-60 h-60 rounded-3xl;
+  @apply relative flex items-center justify-center overflow-hidden w-40 h-40 sm:w-60 sm:h-60 rounded-3xl;
 }
 
 .card-zoom-image {
