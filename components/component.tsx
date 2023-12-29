@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Component() {
   return (
-    <div className="grid place-items-center h-screen py-8 w-4/5 sm:w-1/2 mx-auto text-[#202020] bg-[#FCFCFC]">
+    <div className="grid place-items-center h-screen py-8 w-4/5 sm:w-1/2 mx-auto text-[#202020]">
       <main className="flex-1 space-y-16 lg:space-y-20 xl:space-y-30">
         <section 
           className="flex"
