@@ -20,7 +20,7 @@ export default function Component() {
             <div className="flex flex-col w-full space-y-4 text-left">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Front-End React Developer</h2>
               <p className="text-base sm:text-lg xl:text-xl/none">Hey I'm Christophe Eyl 😁</p>
-              <p className="text-base sm:text-lg xl:text-xl/none">I'm a passionate front-end developer based in Paris.</p>
+              <p className="text-base sm:text-lg xl:text-xl/none">I'm a passionate front-end developer living in Paris 📍</p>
               <div className="space-x-4">
                 <Link
                   className="inline-flex items-center justify-center rounded-md bg-[#202020] px-2 py-2 text-white"
