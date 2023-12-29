@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import Image from "next/image"
 import ts from "../public/ts.svg"
 import react from "../public/react.svg"
@@ -10,17 +9,18 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Component() {
   return (
-    <div className="text-[#202020] bg-[#FCFCFC]">
-      <div className="w-full lg:w-1/2 mx-auto px-8">
-        <main className="flex-1">
+    <div className="grid place-items-center h-screen">
+      <div className="w-full sm:w-1/2 mx-auto text-[#202020] bg-[#FCFCFC]">
+        <main className="flex-1 space-y-4 sm:space-y-8 md:space-y-12 lg:space-y-20 xl:space-y-30">
           <section 
-            className="flex py-4 sm:py-8 md:py-12 lg:py-20 xl:py-30"
+            className="flex"
             id="about"
           >
             <div className="flex flex-col w-full space-y-4 text-left">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Front-End React Developer</h2>
               <p className="text-base sm:text-lg xl:text-xl/none">Hey I'm Christophe Eyl 😁</p>
-              <p className="text-base sm:text-lg xl:text-xl/none">I'm a passionate front-end developer living in Paris 📍</p>
+              <p className="text-base sm:text-lg xl:text-xl/none">I'm a passionate front-end developer</p>
+              <p className="text-base sm:text-lg xl:text-xl/none">I'm living in Paris 📍</p>
               <div className="space-x-4">
                 <Link
                   className="inline-flex items-center justify-center rounded-md bg-[#202020] px-2 py-2 text-white"
@@ -42,10 +42,10 @@ export default function Component() {
               <div className="card-zoom-image bg-linkedinPicture" />
             </div>
           </section>
-          <section className="py-4 sm:py-8 md:py-12 lg:py-20 xl:py-30" id="skills">
-            <div className="container space-y-4">
+          <section id="skills">
+            <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Tech Stack</h2>
-              <div className="grid lg:grid-cols-4 gap-12 items-center justify-center">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-center place-items-center">
                 <Image src={react} alt="React logo" className="h-60 w-60" />
                 <Image src={tailwind} alt="Tailwind logo" className="h-60 w-60" />
                 <Image src={nest} alt="Nest logo" className="h-60 w-60" />
@@ -55,9 +55,6 @@ export default function Component() {
           </section>
         </main>
       </div>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-sm">© Christophe Eyl. All rights reserved.</p>
-      </footer>
     </div>
   )
 }
