@@ -10,8 +10,8 @@ import { FaGithub } from "react-icons/fa";
 export default function Component() {
   return (
     <div className="grid place-items-center h-screen">
-      <div className="w-full sm:w-1/2 mx-auto text-[#202020] bg-[#FCFCFC]">
-        <main className="flex-1 space-y-4 sm:space-y-8 md:space-y-12 lg:space-y-20 xl:space-y-30">
+      <div className="w-4/5 sm:w-1/2 mx-auto text-[#202020] bg-[#FCFCFC]">
+        <main className="flex-1 space-y-16 lg:space-y-20 xl:space-y-30">
           <section 
             className="flex"
             id="about"
@@ -45,7 +45,7 @@ export default function Component() {
           <section id="skills">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Tech Stack</h2>
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-center place-items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-center place-items-center">
                 <Image src={react} alt="React logo" className="h-60 w-60" />
                 <Image src={tailwind} alt="Tailwind logo" className="h-60 w-60" />
                 <Image src={nest} alt="Nest logo" className="h-60 w-60" />
