@@ -7,6 +7,7 @@ import tailwind from "../public/tailwind.svg"
 import { FaLinkedin, FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Badge } from "./ui/badge"
+import { Separator } from "./ui/separator"
 
 export default function Component() {
   return (
@@ -17,7 +18,7 @@ export default function Component() {
           id="about"
         >
           <div className="flex flex-col w-full space-y-6 text-left">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Front-End React Developer</h2>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"><u>Fullstack Freelance Developer</u></h1>
             <div className="space-y-2">
               <p className="text-base sm:text-lg xl:text-xl/none">Hey I'm Christophe Eyl 😁</p>
               <p className="text-base sm:text-lg xl:text-xl/none">I'm a passionate fullstack developer</p>
@@ -46,12 +47,12 @@ export default function Component() {
         </section>
         <section id="projets">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Projects</h2>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"><u>Projects</u></h2>
             <div className="space-y-10">
-              <div className="grid grid-cols-1 xl:grid-cols-2">
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                 <div className="grid place-items-center">
                   <div className="space-y-2">
-                    <h2 className="text-lg mb-3 font-semibold">CHC-DEPAGAZ landing page</h2>
+                    <h3 className="text-lg mb-3 font-semibold">CHC-DEPAGAZ landing page</h3>
                     <div className="flex flex-wrap gap-2">
                       <Badge className="bg-[#202020] text-white" variant="default">NextJS</Badge>
                       <Badge className="bg-[#202020] text-white" variant="default">React</Badge>
@@ -62,7 +63,7 @@ export default function Component() {
                     </p>
                   </div>
                 </div>
-                <Link href="https://chc-depagaz-landing-page.vercel.app/" target="_blank" className="grid place-items-center">
+                <Link href="https://chc-depagaz-landing-page.vercel.app/" target="_blank" className="grid place-items-center border rounded-md h-[300px]">
                   <Image
                     src={react}
                     alt="chaudière à condensation"
@@ -73,10 +74,20 @@ export default function Component() {
                   />
                 </Link>
               </div>
-              <div className="grid grid-cols-1 xl:grid-cols-2">
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                <Link href="https://chc-depagaz-landing-page.vercel.app/" target="_blank" className="grid place-items-center border rounded-md h-[300px] xl:order-first order-last">
+                  <Image
+                    src={react}
+                    alt="chaudière à condensation"
+                    className="rounded-lg scale-75 hover:scale-100 ease-in duration-200 "
+                    loading="lazy"
+                    width={200}
+                    height={200}
+                  />
+                </Link>
                 <div className="grid place-items-center">
                   <div className="space-y-2">
-                    <h2 className="text-lg font-semibold">Les doux gîtes de Dordogne</h2>
+                    <h3 className="text-lg font-semibold">Les doux gîtes de Dordogne</h3>
                     <div className="flex flex-wrap gap-2">
                       <Badge className="bg-[#202020] text-white" variant="default">NextJS</Badge>
                       <Badge className="bg-[#202020] text-white" variant="default">React</Badge>
@@ -89,23 +100,13 @@ export default function Component() {
                     </p>
                   </div>
                 </div>
-                <Link href="https://chc-depagaz-landing-page.vercel.app/" target="_blank" className="grid place-items-center">
-                  <Image
-                    src={react}
-                    alt="chaudière à condensation"
-                    className="rounded-lg scale-75 hover:scale-100 ease-in duration-200"
-                    loading="lazy"
-                    width={200}
-                    height={200}
-                  />
-                </Link>
               </div>
             </div>
           </div>
         </section>
         <section id="skills">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Tech Stack</h2>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"><u>Tech Stack</u></h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-center place-items-center">
               <Image src={react} alt="React logo" className="w-20 h-20 md:w-60 md:h-60 " />
               <Image src={tailwind} alt="Tailwind logo" className="w-20 h-20 md:w-60 md:h-60 " />
