@@ -63,7 +63,7 @@ export default function Component() {
                     </p>
                   </div>
                 </div>
-                <Link href="https://chc-depagaz-landing-page.vercel.app/" target="_blank" className="grid place-items-center border rounded-md h-[300px]">
+                <Link href="https://www.chc-energie.fr/" target="_blank" className="grid place-items-center border rounded-md h-[300px]">
                   <Image
                     src={react}
                     alt="chaudière à condensation"
@@ -75,7 +75,7 @@ export default function Component() {
                 </Link>
               </div>
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-                <Link href="https://chc-depagaz-landing-page.vercel.app/" target="_blank" className="grid place-items-center border rounded-md h-[300px] xl:order-first order-last">
+                <Link href="https://www.chc-energie.fr/" target="_blank" className="grid place-items-center border rounded-md h-[300px] xl:order-first order-last">
                   <Image
                     src={react}
                     alt="chaudière à condensation"
